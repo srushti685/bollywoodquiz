@@ -1,0 +1,143 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #1b0b0b;
+    color: white;
+    text-align: center;
+}
+
+.container {
+    min-height: 100vh;
+    padding: 30px 15px;
+    background: linear-gradient(135deg, #1b0b0b, #4b1111);
+}
+
+h1 {
+    color: #ffd700;
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    font-size: 18px;
+    color: #f5d58a;
+}
+
+.quiz-box {
+    max-width: 650px;
+    margin: 30px auto;
+    padding: 30px;
+    background-color: #2b1515;
+    border: 3px solid #ffd700;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(255, 215, 0, 0.3);
+}
+
+.top {
+    display: flex;
+    justify-content: space-between;
+    color: #ffd700;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+
+.dialogue-box {
+    background-color: #120808;
+    border-left: 5px solid #ffd700;
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 10px;
+}
+
+#dialogue {
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 1.5;
+}
+
+h2 {
+    font-size: 18px;
+    color: #f5d58a;
+}
+
+.options {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.option {
+    padding: 15px;
+    background-color: #5c1b1b;
+    color: white;
+    border: 2px solid #d4a017;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.option:hover {
+    background-color: #8b2929;
+    transform: scale(1.03);
+}
+
+.correct {
+    background-color: #16803c !important;
+}
+
+.wrong {
+    background-color: #b22222 !important;
+}
+
+#result {
+    font-size: 18px;
+    font-weight: bold;
+    min-height: 25px;
+    margin: 20px;
+}
+
+#next-btn {
+    padding: 12px 25px;
+    background-color: #ffd700;
+    color: #1b0b0b;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#next-btn:hover {
+    background-color: #fff0a3;
+}
+
+.final-score {
+    font-size: 28px;
+    color: #ffd700;
+    font-weight: bold;
+}
+
+@media (max-width: 600px) {
+
+    h1 {
+        font-size: 28px;
+    }
+
+    .options {
+        grid-template-columns: 1fr;
+    }
+
+    #dialogue {
+        font-size: 20px;
+    }
+
+    .quiz-box {
+        padding: 20px;
+    }
+}
