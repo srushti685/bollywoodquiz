@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Bollywood Dialogue Quiz</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>🎬 Bollywood Dialogue Quiz 🎬</h1>
+
+        <p class="subtitle">
+            Guess the movie or actor from the iconic dialogue!
+        </p>
+
+        <div class="quiz-box">
+
+            <div class="top">
+                <span id="question-number">Question 1</span>
+                <span id="score">Score: 0</span>
+            </div>
+
+            <div class="dialogue-box">
+                <p id="dialogue">
+                    Loading dialogue...
+                </p>
+            </div>
+
+            <h2>Who or which movie is this from?</h2>
+
+            <div id="options" class="options"></div>
+
+            <p id="result"></p>
+
+            <button id="next-btn" onclick="nextQuestion()">
+                Next Question →
+            </button>
+
+        </div>
+
+        <div id="final-score" class="final-score"></div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
